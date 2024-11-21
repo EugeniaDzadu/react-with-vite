@@ -1,16 +1,20 @@
-function SinglePost(){
+import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
+
+
+function SinglePost({midHead, subHead, date}){
     return(
         <>
            {/* <!-- Post preview--> */}
                     <div className="post-preview">
-                        <a href="post.html">
-                            <h2 className="post-title">Man must explore, and this is exploration at its greatest</h2>
-                            <h3 className="post-subtitle">Problems look mighty small from 150 miles up</h3>
-                        </a>
+                        <Link href="/post">
+                            <h2 className="post-title">{midHead}</h2>
+                            <h3 className="post-subtitle">{subHead}</h3>
+                        </Link>
                         <p className="post-meta">
                             Posted by
-                             <a href="#!">Start Bootstrap</a>
-                            on September 24, 2023
+                             <HashLink smooth to="#!">Start Bootstrap </HashLink>
+                            on {date}, 2023
                         </p>
                     </div>
                     {/* <!-- Divider--> */}
