@@ -1,11 +1,9 @@
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import Nav from "../components/Nav";
+import Header from '../components/Header'
 
 function Contact(){
     return(
         <>
-           <Nav/>
+           
 
            <Header title="Contact Us" subTitle="Have questions? We have answers." bgImage="contact-bg.jpg"/>
 
@@ -59,7 +57,6 @@ function Contact(){
             </div>
         </main> 
 
-           <Footer/>
         
         </>
     )
